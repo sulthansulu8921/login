@@ -1,0 +1,122 @@
+/* Layout */
+.dashboard {
+  display: flex;
+  background: #f6f7fb;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 90px;
+  background: #fff;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.side-icon {
+  padding: 14px 0;
+  color: #888;
+  font-size: 11px;
+}
+
+.side-icon i {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.side-icon.active {
+  background: #eef0ff;
+  color: #6c63ff;
+  border-radius: 14px;
+  margin: 6px;
+}
+
+/* Topbar */
+.topbar {
+  background: #fff;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cards */
+.stat-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.stat-title {
+  color: #8a8fa3;
+  font-size: 14px;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* General Card */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Conversion */
+.progress-row {
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.progress-bg {
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+.progress-bg div {
+  height: 100%;
+  border-radius: 6px;
+}
+
+/* Table */
+.team-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.export-btn {
+  border: 1px solid #6c63ff;
+  color: #6c63ff;
+  background: transparent;
+  padding: 6px 14px;
+  border-radius: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
