@@ -1,122 +1,300 @@
-/* Layout */
+/* =======================
+   LAYOUT
+======================= */
 .dashboard {
-  display: flex;
-  background: #f6f7fb;
-  min-height: 100vh;
+    display: flex;
+    background: #f6f7fb;
+    min-height: 100vh;
 }
 
 .main-content {
-  flex: 1;
+    flex: 1;
 }
 
-/* Sidebar */
+/* =======================
+   SIDEBAR
+======================= */
 .sidebar {
-  width: 90px;
-  background: #fff;
-  padding-top: 20px;
-  text-align: center;
+    width: 90px;
+    background: #ffffff;
+    padding-top: 20px;
+    text-align: center;
 }
 
 .side-icon {
-  padding: 14px 0;
-  color: #888;
-  font-size: 11px;
+    padding: 14px 0;
+    color: #888;
+    font-size: 11px;
+    cursor: pointer;
 }
 
 .side-icon i {
-  font-size: 18px;
-  display: block;
-  margin-bottom: 6px;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 6px;
 }
 
 .side-icon.active {
-  background: #eef0ff;
-  color: #6c63ff;
-  border-radius: 14px;
-  margin: 6px;
+    background: #eef0ff;
+    color: #6c63ff;
+    border-radius: 14px;
+    margin: 6px;
 }
 
-/* Topbar */
+/* =======================
+   TOPBAR
+======================= */
 .topbar {
-  background: #fff;
-  padding: 14px 24px;
-  display: flex;
-  justify-content: space-between;
+    background: #ffffff;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Cards */
+/* =======================
+   STATS GRID (IMPORTANT)
+======================= */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 20px;
+}
+
+/* =======================
+   STAT CARD (MODEL MATCH)
+======================= */
 .stat-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 120px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
 .stat-title {
-  color: #8a8fa3;
-  font-size: 14px;
+    font-size: 14px;
+    color: #8a8fa3;
+    margin-bottom: 6px;
+}
+
+.stat-value {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0f172a;
 }
 
 .stat-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon i {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+/* Sales header layout */
+.sales-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Monthly dropdown style */
+.sales-filter {
+    background: #f6f7fb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 13px;
+    color: #374151;
+    cursor: pointer;
+}
+
+/* =========================
+   SALES DROPDOWN (MODEL)
+========================= */
+
+.sales-dropdown {
+    position: relative;
+}
+
+.sales-dropdown select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    padding: 8px 36px 8px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6b7280;
+
+    cursor: pointer;
+    outline: none;
+}
+
+.sales-card {
+  height: 360px;          /* REQUIRED */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
-/* General Card */
+.sales-header {
+  flex-shrink: 0;
+}
+
+/* THIS IS THE MOST IMPORTANT PART */
+.sales-chart {
+  flex: 1;               /* REQUIRED */
+  min-height: 335px;     /* SAFETY */
+  padding: 0 18px 20px;
+}
+
+
+/* Custom arrow */
+.sales-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #9ca3af;
+    border-bottom: 2px solid #9ca3af;
+    transform: translateY(-50%) rotate(45deg);
+    pointer-events: none;
+}
+
+
+/* =======================
+   GENERAL CARD
+======================= */
 .card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
-/* Conversion */
+/* =======================
+   CONVERSION BARS
+======================= */
 .progress-row {
-  margin-top: 14px;
-  font-size: 13px;
+    margin-top: 14px;
+    font-size: 13px;
 }
 
 .progress-bg {
-  height: 6px;
-  background: #e9ecef;
-  border-radius: 6px;
-  margin-top: 6px;
+    height: 6px;
+    background: #e9ecef;
+    border-radius: 6px;
+    margin-top: 6px;
 }
 
 .progress-bg div {
-  height: 100%;
-  border-radius: 6px;
+    height: 100%;
+    border-radius: 6px;
 }
 
-/* Table */
+/* =======================
+   CONVERSION CARD (FIGMA)
+======================= */
+.conversion-card {
+  padding: 24px 26px;
+  height: 360px;              /* 🔥 SAME AS SALES CARD */
+}
+
+.conversion-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+.conversion-row {
+  margin-bottom: 18px;
+}
+
+.conversion-row span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #334155;
+}
+
+/* Track */
+.conversion-track {
+  height: 6px;               /* 🔥 thinner like Figma */
+  background: #e5e7eb;
+  border-radius: 999px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+/* Fill */
+.conversion-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+@media (max-width: 992px) {
+  .conversion-card {
+    height: auto;
+  }
+}
+
+
+/* =======================
+   TABLE
+======================= */
 .team-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 10px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
 }
 
 .export-btn {
-  border: 1px solid #6c63ff;
-  color: #6c63ff;
-  background: transparent;
-  padding: 6px 14px;
-  border-radius: 8px;
+    border: 1px solid #6c63ff;
+    color: #6c63ff;
+    background: transparent;
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-/* Mobile */
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 1200px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
-  .dashboard {
-    flex-direction: column;
-  }
-  .sidebar {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
 }

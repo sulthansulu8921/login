@@ -1,6 +1,7 @@
+import "../styles/topbar.css";
+
 export default function Topbar() {
-  // You can later replace this with backend user data
-  const userName = "Arjun"; // example
+  const userName = "Arjun"; // later from backend
   const firstLetter = userName.charAt(0).toUpperCase();
 
   return (
@@ -17,7 +18,6 @@ export default function Topbar() {
           <i className="bi bi-bell"></i>
         </button>
 
-        {/* PROFILE ICON */}
         <div className="profile-avatar">
           {firstLetter}
         </div>

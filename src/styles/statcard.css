@@ -1,0 +1,62 @@
+.stat-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 120px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* Left text */
+.stat-title {
+  font-size: 14px;
+  color: #8a8fa3;
+  margin-bottom: 6px;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Icon base */
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon i {
+  font-size: 22px;
+  color: #ffffff;
+  
+}
+
+/* ===== EXACT GRADIENTS (MATCH IMAGE) ===== */
+
+/* Purple – Total Leads */
+.stat-icon.purple {
+  background: linear-gradient(180deg, rgba(89, 72, 219, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+/* Green – Active Deals */
+.stat-icon.green {
+  background: linear-gradient(135deg, #34d399, #10b981);
+}
+
+/* Red – Closed Deals */
+.stat-icon.red {
+  background: linear-gradient(135deg, #fb7185, #f43f5e);
+}
+
+/* Yellow – Monthly Revenue */
+.stat-icon.yellow {
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+}

@@ -1,3 +1,5 @@
+import "../styles/dashboard.css";
+
 export default function ConversionCard() {
   const data = [
     { label: "Contact", w: "70%", c: "#6c63ff" },
@@ -9,14 +11,19 @@ export default function ConversionCard() {
   ];
 
   return (
-    <div className="card">
-      <h6>Contact to Deal Conversion</h6>
+    <div className="card conversion-card">
+      <h6 className="conversion-title">
+        Contact to Deal Conversion
+      </h6>
 
       {data.map((d, i) => (
-        <div key={i} className="progress-row">
+        <div key={i} className="conversion-row">
           <span>{d.label}</span>
-          <div className="progress-bg">
-            <div style={{ width: d.w, background: d.c }} />
+          <div className="conversion-track">
+            <div
+              className="conversion-fill"
+              style={{ width: d.w, backgroundColor: d.c }}
+            />
           </div>
         </div>
       ))}
