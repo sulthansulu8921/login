@@ -1,12 +1,12 @@
 .stat-card {
   background: #ffffff;
-  border-radius: 18px;
-  padding: 22px 24px;
+  border-radius: 16px;
+  padding: 20px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;          /* 🔥 REQUIRED */
   min-height: 120px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
 /* Left text */

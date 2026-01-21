@@ -5,40 +5,11 @@
     display: flex;
     background: #f6f7fb;
     min-height: 100vh;
+    margin-top: 40px;
 }
 
 .main-content {
     flex: 1;
-}
-
-/* =======================
-   SIDEBAR
-======================= */
-.sidebar {
-    width: 90px;
-    background: #ffffff;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.side-icon {
-    padding: 14px 0;
-    color: #888;
-    font-size: 11px;
-    cursor: pointer;
-}
-
-.side-icon i {
-    font-size: 18px;
-    display: block;
-    margin-bottom: 6px;
-}
-
-.side-icon.active {
-    background: #eef0ff;
-    color: #6c63ff;
-    border-radius: 14px;
-    margin: 6px;
 }
 
 /* =======================
@@ -147,7 +118,7 @@
 }
 
 .sales-card {
-  height: 360px;          /* REQUIRED */
+  height: 400px;          /* REQUIRED */
   display: flex;
   flex-direction: column;
 }
@@ -234,6 +205,18 @@
   color: #334155;
 }
 
+.main-content {
+  margin-left: 90px;
+  padding-top: 80px;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+
 /* Track */
 .conversion-track {
   height: 6px;               /* 🔥 thinner like Figma */
@@ -298,3 +281,5 @@
         grid-template-columns: 1fr;
     }
 }
+
+

@@ -11,7 +11,7 @@ export default function ConversionCard() {
   ];
 
   return (
-    <div className="card conversion-card">
+    <div className="card conversion-card ">
       <h6 className="conversion-title">
         Contact to Deal Conversion
       </h6>

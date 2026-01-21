@@ -21,7 +21,7 @@ export default function SalesChart() {
     <ResponsiveContainer width="100%" height={280}>
       <BarChart
         data={data}
-        barGap={-40}               // overlay bars
+        barGap={-40}               
         barCategoryGap={32}
         margin={{ top: 20, right: 10, left: 10, bottom: 10 }}
       >
@@ -45,7 +45,7 @@ export default function SalesChart() {
               x="0"
               y="0"
               width="2"
-              height="6"
+              height="9"
               fill="#E6E5FB"
               fillOpacity="0.5"
             />

@@ -4,3 +4,4 @@ export default function ProtectedRoute({ children }) {
   // TEMP: allow access during UI development
   return children;
 }
+
